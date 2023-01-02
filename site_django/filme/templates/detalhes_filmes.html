@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block titulo %}
+    {{ object.titulo }}
+{% endblock %}
+
+{% block content %}
+
+
+
+<main class='bg-primary_black min-h-screen w-full'>
+    <section class="h-screen relative bg-no-repeat pb-8 pl-6 flex  items-end bg-cover" style="background-image: url('{{ object.thumb.url }}');">
+        <div>
+            <h2 class="text-6xl font-semibold text-white my-4">
+                {{ object.titulo }}
+            </h2>
+            <p class=" w-11/12 md:w-5/12 font-medium text-white my-4">
+                {{ object.descricao|slice:":55" }}...
+            </p>
+            <div class="flex my-4">
+                <a href="{{ object.episodios.first.video }}">
+                    <button class="button-play flex items-center py-2 px-5 rounded-md">
+                        <ion-icon name="play" class="text-2xl"></ion-icon>
+                        <span class="ml-3 font-medium">
+                            Play
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class='bg-primary_black flex justify-center py-10'>
+        <div class="p-8 w-10/12 relative" >
+            <h2 class="text-gray-200 text-3xl font-medium">
+                Descrição
+            </h2>
+            <div class="flex justify-left  items-center min-w-full  movie_lis">
+                <p class="text-gray-100 text-lg">
+                    {{ object.descricao }}<br>
+                </p>
+            </div>
+
+            <div style='margin-top:2rem;margin-bottom:2rem;'>
+                <h2 class="text-gray-200 text-3xl font-medium">
+                    Episódios
+                </h2>
+                <h3 class='text-lg'>
+                    {% for ep in object.episodios.all %}
+                        <a href="{{ ep.video }}">
+                            <p class="">Episódio: {{ forloop.counter }} {{ ep.titulo }}</p>
+                        </a>
+                    {% endfor %}
+                </h3>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class='bg-primary_black flex justify-center py-10'>
+
+        <div class="flex p-8 w-10/12 relative" >
+
+
+            <div class="items-center min-w-full movie_lis">
+                <h2 class="text-gray-200 text-2xl font-medium">
+                    Relacionados
+                </h2>
+                <div class="flex flex-wrap">
+                    {% for filmes_r in filmes_relacionados %}
+                        <div class=" hover m-4 bg-blue-500 overflow-hidden flex-shrink-0 rounded-md cursor-pointer h-64 w-96">
+
+                            <a href="{% url 'filme:detalhes_filme' filmes_r.id %}" class="img-overlay">
+                                <img src="{{ filmes_r.thumb.url }}" class="object-cover w-full h-full " alt="">
+                            </a>
+
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+{% endblock %}

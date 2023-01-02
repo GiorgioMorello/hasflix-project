@@ -1,0 +1,169 @@
+
+.input-div input:focus {
+    box-shadow: 0 0 10px 0.5px red;
+    outline: none;
+}
+
+
+.button-play {
+    transition: 0.5s;
+    color: black;
+    background: white;
+}
+
+
+.button-play:hover {
+    background: black;
+    color: white;
+}
+
+
+.hover {
+    transition: 0.5s;
+    position: relative;
+}
+
+
+.hover:hover {
+    transform: scale(1.05);
+}
+
+
+.img-overlay {
+    position: relative;
+
+}
+
+.img-overlay:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+
+/* Pagina de login */
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+
+[name~="username"], [name~="password"] {
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+
+[name~="username"]:focus {
+    box-shadow: 0 0 10px 0.5px red !important;
+    outline: none;
+
+}
+
+
+[name~="password"]:focus {
+    box-shadow: 0 0 10px 0.5px red;
+    outline: none;
+
+}
+
+
+
+
+/* Pagina de Criar Conta */
+
+.pwd, .email_field, #id_password2 {
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#id_password2:focus, .pwd:focus, .email_field:focus {
+    box-shadow: 0 0 10px 0.5px red;
+    outline: none;
+}
+
+
+.errorlist {
+    background: #f8d7da;
+    color: #842029;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+
+span:nth-of-type(3) {
+    display: none;
+}
+
+/* HomePage */
+
+.home_form {
+    width: 50%;
+
+}
+
+.home_input {
+    color: black;
+    width: 100%;
+    padding: 5px;
+}
+
+
+/* Editar Perifl */
+
+fieldset #id_email, #id_first_name, #id_last_name {
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#id_email:focus, #id_first_name:focus, #id_last_name:focus {
+    box-shadow: 0 0 10px 0.5px red;
+    outline: none;
+}
+
+
+/* Alterar Senha */
+
+#id_old_password, #id_new_password1, #id_new_password2 {
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#id_old_password:focus, #id_new_password1:focus, #id_new_password2:focus {
+    box-shadow: 0 0 10px 0.5px red;
+    outline: none;
+}
+
+.helptext {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
