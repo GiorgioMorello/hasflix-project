@@ -76,3 +76,17 @@
 
 
 ![desc_ep](https://user-images.githubusercontent.com/99151447/216795909-50d29c52-c226-48d2-963e-874e3629e8a0.PNG)
+<hr>
+
+<p>Nos filmes relacionado são exibidos somente os filmes que tem a mesma categoria que o filme da página</p>
+
+
+![filmes_relacionados](https://user-images.githubusercontent.com/99151447/216796378-567eb04c-70bf-47f6-8095-3da23a3278cc.PNG)
+<hr>
+
+
+<h3>Barra de Pesquisa</h3>
+<p>A barra de pesquisa é filtrada pelo os titulos dos filmes, ou seja, ele só vai pesquisar por titulos</p>
+
+
+![pesquisa](https://user-images.githubusercontent.com/99151447/216796964-f17e70d2-afc6-4b79-a7f9-ba2856bcf7e9.PNG)
