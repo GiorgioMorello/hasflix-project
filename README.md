@@ -90,3 +90,10 @@
 
 
 ![pesquisa](https://user-images.githubusercontent.com/99151447/216796964-f17e70d2-afc6-4b79-a7f9-ba2856bcf7e9.PNG)
+<hr>
+
+<h3>Editar Perfil</h3>
+<p>Na página de Editar Perfil, você pode alterar o endereço de e-mail, nome de usuário e sua senha</p>
+
+![editar_perfil](https://user-images.githubusercontent.com/99151447/216798058-5794497a-cdf8-4c4b-b7d8-29ef46138272.PNG)
+
