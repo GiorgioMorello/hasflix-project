@@ -31,6 +31,8 @@
 
 
 <h3>HomeFilmes</h3>
+
+
 <p>Na página HomeFilmes, sera mostrado os Novos Filmes, Filmes em Alta e Filmes Vistos</p>
 
 
@@ -58,4 +60,19 @@
  
   
  ![filmes_vistos](https://user-images.githubusercontent.com/99151447/216795490-94d878ef-7538-4979-a51b-132f390c3f0d.PNG)
+<hr>
 
+
+
+<h3>Detalhes Filmes</h3>
+<p>Ao clicar em algum filme, você sera redirecionado para página de detalhes do filme</p>
+
+![detalhes](https://user-images.githubusercontent.com/99151447/216795744-cdd65ad9-084d-482a-a22a-18e484a62d0e.PNG)
+<hr>
+
+
+<p>Dentro da página de Detalhes Filmes, sera exibido a Descrição do filme, os episódios e os filmes relacionados</p>
+
+
+
+![desc_ep](https://user-images.githubusercontent.com/99151447/216795909-50d29c52-c226-48d2-963e-874e3629e8a0.PNG)
