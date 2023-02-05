@@ -20,6 +20,7 @@
         <section class="h-screen relative bg-no-repeat pb-8 pl-6 flex items-end bg-cover" style="background-image: url('{{ filme_d.thumb.url }}');">
             <div>
                 <h2 class="text-6xl font-semibold text-white my-4">
+                    <!-- Filme Destaque -->
                     {{ filme_d }}
                 </h2>
                 <p class=" w-11/12 md:w-5/12 font-medium text-white my-4">
@@ -47,6 +48,7 @@
                 <div class="wrapper">
                   <section id="section1" class="flex flex-nowrap items-center justify-center space-x-8">
                     <a href="#section2" class="arrow__btn text-6xl page">‹</a>
+                      <!-- Filme Recentes -->
                       {% for filmes_n in filmes_recentes %}
                         {% if forloop.counter <= 4 %}
 
@@ -93,6 +95,7 @@
                 <div class="wrapper">
                   <section id="section3" class="flex flex-nowrap items-center justify-center space-x-8">
                     <a href="#section4" class="arrow__btn text-6xl page">‹</a>
+                      <!-- Filmes em Alta -->
                       {% for filmes_a in filmes_alta %}
                         {% if forloop.counter <= 4 %}
 
@@ -106,7 +109,7 @@
                       {% endfor %}
                         <a href="#section4" class="arrow__btn text-6xl">›</a>
                   </section>
-                    {% if filmes_recentes|length > 4 %}
+                    {% if filmes_a|length > 4 %}
                         <section id="section4" class="flex flex-nowrap items-center justify-center">
                             <a href="#section3" class="arrow__btn text-6xl">‹</a>
                             {% for filmes_a in filmes_alta %}
@@ -139,7 +142,8 @@
                 </h2>
                 <div class="wrapper">
                   <section id="section5" class="flex flex-nowrap items-center justify-center space-x-8">
-                    <a href="#sectio6" class="arrow__btn text-6xl page">‹</a>
+                    <a href="#section6" class="arrow__btn text-6xl page">‹</a>
+                      <!-- Filmes que o usuário assistiu -->
                       {% for filmes_v in request.user.filme_vistos.all %}
                         {% if forloop.counter <= 4 %}
 

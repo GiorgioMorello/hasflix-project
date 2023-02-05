@@ -102,6 +102,13 @@ class PaginaPerfil(LoginRequiredMixin, UpdateView):
     fields = ['email', 'first_name', 'username']
 
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        # Vai pegar o ultimo caractere, que no caso é o id do usuário
+        context['url'] = int(self.request.path[-1])
+        return context
+
+
     def get_success_url(self):
         return reverse('filme:home_filmes')
 

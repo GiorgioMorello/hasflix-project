@@ -154,7 +154,10 @@ fieldset #id_email, #id_first_name, #id_last_name {
 
 
 
+.width_size {
+    width: 50%;
 
+}
 
 
 
