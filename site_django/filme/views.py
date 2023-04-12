@@ -4,15 +4,6 @@ from django.views.generic import TemplateView, ListView, DetailView, FormView, U
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .forms import CriarContaForm, HomeForm
 
-# FUNCTION BASED VIEWS x CLASS BASED VIEWS
-
-
-# Create your views here.
-
-
-# def homepage(r):
-# return render(r, 'homepage.html')
-
 class Homepage(FormView):
     template_name = 'homepage.html'
     form_class = HomeForm
